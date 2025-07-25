@@ -47,6 +47,14 @@ Unlike auto-blocking or intervention-based systems, this tool is focused on **in
 Built with **Bash + Django**, this system avoids complex ML, heavy DBs, or cloud dependencies — perfect for quick deployment, testing, or demos in hackathon settings.
 
 
+<img width="1204" height="324" alt="Screenshot 2025-07-25 061924" src="https://github.com/user-attachments/assets/00201172-04bd-47fe-b056-0f4ea42815f5" />
+This automates the retrieval of threat intelligence feeds from ThreatFox and AlienVault. The script successfully downloads JSON and TXT formatted feeds and stores them with timestamps in the feeds/ directory. This automation ensures timely and organized collection of IOCs for further processing.
+
+<img width="1151" height="49" alt="image" src="https://github.com/user-attachments/assets/b2551a72-d923-4a27-9839-cef68381c5c4" />
+The successful execution of parse_feeds.py, a Python script that processes and parses the raw threat intelligence feeds fetched via Bash. It extracts key Indicators of Compromise (IOCs) such as malicious IPs, URLs, domains, and hashes, and stores them in a structured CSV file. In this instance, 1,220 IOCs were parsed and saved to:
+/home/flowjav/Videos/threat-aggregator/parsed_feeds/aggregated_iocs.csv
+
+
 
 ## 📁 Project Structure
 
