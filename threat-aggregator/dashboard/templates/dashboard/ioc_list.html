@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aggregated IOCs</title>
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">IOC Aggregator Dashboard</h1>
+    <table>
+        <tr>
+            <th>Source</th>
+            <th>IOC Type</th>
+            <th>Value</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for ioc in iocs %}
+        <tr>
+            <td>{{ ioc.source }}</td>
+            <td>{{ ioc.ioc_type }}</td>
+            <td>{{ ioc.value }}</td>
+            <td>{{ ioc.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
