@@ -61,6 +61,17 @@ threat-aggregator/
 └── README.md                     # Project documentation
 ```
 
+## Output
+1️⃣ **Initial Feed Display (Raw IOC Listing)**
+The application demonstrates successful parsing and display of threat intelligence feeds collected from multiple sources. It shows a table with data like IOCs (Indicators of Compromise), threat types, and timestamps. This confirms that the system is effectively fetching and rendering real-time data from platforms like ThreatFox and AlienVault.
+<img width="1260" height="764" alt="Screenshot 2025-07-25 054122" src="https://github.com/user-attachments/assets/e1f796f2-105d-43f6-9a38-2fe07b019ead" />
+
+
+2️⃣ **Enhanced Web UI – IOC Table Display**
+This highlights the web interface powered by Django. The data is structured into a clean, searchable table view, styled with modern frontend frameworks. It includes search functionality and sorting capabilities, enabling cybersecurity analysts to sift through large volumes of threat data with ease.
+<img width="1237" height="764" alt="Screenshot 2025-07-25 054133" src="https://github.com/user-attachments/assets/c3992811-f914-44ec-afa2-bb63962f9d5b" />
+
+
 ## 💡 Why It Stands Out
 This project offers a realistic, usable, and easily extensible solution to the growing need for threat aggregation. With a clean architecture and focused utility, it empowers analysts and developers to access IOC data quickly — all without overengineering.
 
